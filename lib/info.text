@@ -1,0 +1,18 @@
+use flutter version : 3.16.9
+not user fvm in this project
+
+Medium profile link : https://medium.com/@parthunagar9
+LinkedIn profile link : https://www.linkedin.com/in/parth-unagar-154a88166/
+Github Profile Link : https://github.com/parthunagar?tab=repositories
+Pintrest profile link : https://pin.it/2aieAsx96
+Facbbook Profile Link : https://www.facebook.com/parth.unagar.9
+Twitter Profile Link : https://twitter.com/parthunagar1
+Instagram Profile Link : https://www.instagram.com/parth_unagar/
+
+Upwork Profile Link : https://www.upwork.com/freelancers/~014aa89af3dbd11aaf
+
+
+# for creating firebase hosting url
+firebase experiments:enable webframeworks
+firebase init hosting
+
