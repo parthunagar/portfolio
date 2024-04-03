@@ -2,7 +2,8 @@
 
 Get started now by cloning :)
 
-<img src="https://user-images.githubusercontent.com/43790152/171403666-468b63d9-52be-4ec6-9cdb-c08c0e9d18f3.png">
+<!-- <img src="https://user-images.githubusercontent.com/43790152/171403666-468b63d9-52be-4ec6-9cdb-c08c0e9d18f3.png"> -->
+<img src="https://github.com/parthunagar/portfolio/blob/main/assets/photos/profile15.png">
 
 <img src="https://user-images.githubusercontent.com/43790152/171403671-4e50f0a8-f73c-40f6-8628-547754afc2ef.png">
 
