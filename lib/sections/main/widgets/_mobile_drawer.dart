@@ -16,10 +16,13 @@ class _MobileDrawer extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
+              SizedBox(height: 30,),
               const Center(
                 child: NavBarLogo(),
               ),
-               Divider(color: appProvider.isDark ? Colors.white : Colors.black,),
+              Divider(
+                color: appProvider.isDark ? Colors.white : Colors.black,
+              ),
               ListTile(
                 leading: Icon(
                   Icons.light_mode,
@@ -41,7 +44,9 @@ class _MobileDrawer extends StatelessWidget {
                   activeColor: AppTheme.c!.primary,
                 ),
               ),
-               Divider(color: appProvider.isDark ? Colors.white : Colors.black,),
+              Divider(
+                color: appProvider.isDark ? Colors.white : Colors.black,
+              ),
               ...NavBarUtils.names.asMap().entries.map(
                     (e) => Padding(
                       padding: const EdgeInsets.all(8.0),
