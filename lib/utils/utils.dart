@@ -52,6 +52,7 @@ class StaticUtils {
   static const String utu3 = 'assets/work/utu3.png';
   static const String utu4 = 'assets/work/utu4.png';
   static const String utu5 = 'assets/work/utu5.png';
+  static const String anglobanner1 = 'assets/work/anglo_banner1.png';
 
   // services
   static const String uiux = 'assets/services/ui.png';

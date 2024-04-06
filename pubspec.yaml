@@ -81,6 +81,7 @@ flutter:
   assets:
     - assets/
     - assets/work/
+    - assets/work/woocom/
     - assets/photos/
     - assets/services/
     - assets/projects/
