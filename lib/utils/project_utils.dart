@@ -9,7 +9,8 @@ class ProjectUtils {
     "assets/work/anglo_banner2.png",
     "assets/work/woocom/woocom_banner1.png",
     "assets/work/reastaurant/reastaurant_banner1.png",
-    "assets/projects/covidB.png",
+    "assets/work/quiz/banner1.png",
+    "assets/work/etaxi/driver/driver_banner1.png",
   ];
 
   static const List<String> icons = [
@@ -28,8 +29,8 @@ class ProjectUtils {
     "assets/work/anglo_logo.png",
     "assets/work/woocom/woocom_logo1.png",
     "assets/work/reastaurant/reastaurant_logo.png",
-    "assets/projects/covid.png",
-    "assets/projects/messenger.png",
+    "assets/work/quiz/logo1.png",
+    "assets/work/etaxi/driver/logo.png",
     "assets/projects/flutter.png",
     "assets/projects/earbender.png",
     "assets/projects/java.png",
@@ -53,13 +54,13 @@ class ProjectUtils {
     "Anglo-Eastern",
     "Woocom",
     "Reastaurant UI Kit",
-    "COVID-19",
-    "Messenger Chat Head UI",
-    "flutter.dev - Flutter Web",
-    "Earbender",
-    "File Transfer Protocol",
-    "My Order",
-    "Hidev",
+    "Quiz App",
+    "ETaxi App",
+    // "flutter.dev - Flutter Web",
+    // "Earbender",
+    // "File Transfer Protocol",
+    // "My Order",
+    // "Hidev",
   ];
 
   static const List<String> description = [
@@ -75,16 +76,16 @@ class ProjectUtils {
     // "A concept app for self-services at various restaurants now a days. More like a Restaurant Ordering System.",
     // "Its my end semester project. The whole design I developed here is an inspiration from my favortie Flutter Developer Marcin Szałek and his blog Fidev."
     "A very unique dart package to Predictable Textfield. Available at pub.dev soon!",
-    "Anglo-Eastern Ship Management offers its services to shipowners around the globe, serving all types and sizes of ships. Powered with live RestAPI given in README.md",
-    "A Phramacy app developed using Flutter powered with Firebase as database with Doctor and Patient panels.",
-    "Reastaurant App Provides food stole information also user can buy food and enjoy itself!",
-    "A live trakcer for COVID19 stats across the Globe and my Home country Pakistan. It uses APIs so the data is live.",
-    "Tried to clone the famous Chat Heads by Facebook Messenger using Flutter. Its basically in-app not exactly like the original chat head.",
-    "Flutter Official Site clone using Flutter Web. Try the live site here. For the time being its not responsive fully so there might be responsiveness issues.",
-    "A concept of Music App developed using Flutter. Having functionality of playing Audio.",
-    "A simple GUI based Java application that sends file from Client to Server but not the other way around.",
-    "A concept app for self-services at various restaurants now a days. More like a Restaurant Ordering System.",
-    "Its my end semester project. The whole design I developed here is an inspiration from my favortie Flutter Developer Marcin Szałek and his blog Fidev."
+    "Anglo-Eastern Ship Management offers its services to ship owners around the globe, serving all types and sizes of ships. This app brings 40 years of learning and experience to all aspects of ship & crew management, education & training of seafarers, technical services & commercial operations also supported by over 25 offices around world with our head office in Hong Kong.",
+    "Woocom Mobile App Builder for WooCommerce will convert your WooCommerce Store into mobile app. It has better user experience with features & functionalities and it's fully compatible with your default WooCommerce Store. Provides user-friendly experience & enhances customers engagement over mobile platform.",
+    "The Reastaurant Ui Kit app lets you order and pay with your phone, get rewards, find out about new items and offers, browse the menu, check nutritional information and more!",
+    "Trivia Quiz App – put your intellect to the test! For trivia enthusiasts and those hungry for knowledge. Trivia Quiz quizlet kahoot game Millionaire show QuizApp quizzlet quizizz erudite quizzland crack let master kahoot kahot, quizzlet, code quiz free coding challenge online test puzzles code tricks exercises programming education academy gratis exam let tips skills.",
+    "The ETaxi app offers the safest and easiest way to ride, with multiple travel options and well-protected rides. With more than 100 vehicles in 50+ cities, ETaxi is the most popular ride hailing service in Germany.",
+    // "Flutter Official Site clone using Flutter Web. Try the live site here. For the time being its not responsive fully so there might be responsiveness issues.",
+    // "A concept of Music App developed using Flutter. Having functionality of playing Audio.",
+    // "A simple GUI based Java application that sends file from Client to Server but not the other way around.",
+    // "A concept app for self-services at various restaurants now a days. More like a Restaurant Ordering System.",
+    // "Its my end semester project. The whole design I developed here is an inspiration from my favortie Flutter Developer Marcin Szałek and his blog Fidev."
   ];
 
   static const List<String> links = [
@@ -103,12 +104,12 @@ class ProjectUtils {
     "https://github.com/mhmzdev/The_Holy_Quran_App",
     "https://github.com/parthunagar/woocom",
     "https://github.com/parthunagar/reastaurant_ui_kit",
-    "https://github.com/mhmzdev/Covid19-Tracker-App",
-    "https://github.com/mhmzdev/Messenger-Chat-Head-Flutter-UI",
-    "https://github.com/mhmzdev/flutter.dev-Flutter-Web-Clone",
-    "https://github.com/mhmzdev/Earbender_Music_App",
-    "https://github.com/mhmzdev/FTP_GUI_Java",
-    "https://github.com/mhmzdev/My-Order-Resturant-Ordering-System",
-    "https://github.com/mhmzdev/Hidev_Web",
+    "https://github.com/parthunagar/quiz_app_trivia",
+    "https://github.com/parthunagar/etaxi",
+    // "https://github.com/mhmzdev/flutter.dev-Flutter-Web-Clone",
+    // "https://github.com/mhmzdev/Earbender_Music_App",
+    // "https://github.com/mhmzdev/FTP_GUI_Java",
+    // "https://github.com/mhmzdev/My-Order-Resturant-Ordering-System",
+    // "https://github.com/mhmzdev/Hidev_Web",
   ];
 }

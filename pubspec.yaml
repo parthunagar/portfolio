@@ -82,6 +82,14 @@ flutter:
     - assets/
     - assets/work/
     - assets/work/woocom/
+    - assets/work/etaxi/user/
+    - assets/work/etaxi/user/mockup/
+    - assets/work/etaxi/driver/
+    - assets/work/etaxi/driver/mockup/
+    - assets/work/etaxi/admin/
+    - assets/work/etaxi/admin/mockup/
+    - assets/work/quiz/
+    - assets/work/quiz/mokup/
     - assets/work/reastaurant/
     - assets/photos/
     - assets/services/

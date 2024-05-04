@@ -19,3 +19,25 @@ firebase init hosting
 
 figma template file :
 https://www.figma.com/file/J17Cb9GoHmrLgOAnvb2fLh/Parth-Unagar-portfolio?type=design&node-id=2-3&mode=design&t=QPaGl7c5iypUUDiN-0
+
+
+firebase web hosting
+enable hosting in firebase : sidebar -> build -> hosting
+
+# create hosting url
+firebase deploy 
+firebase deploy --only hosting
+
+//finally follow this step [no need to another one]
+# create new site or add another site
+add-site-id : add name of site which wants to you need
+follow step for crete site
+run command for create site :
+firebase deploy --only hosting:parthunagar  
+
+
+
+# change url [incomplete]
+firebase hosting:channel:deploy cardmaker-95ba3--live-parthunagar 
+firebase hosting:channel:deploy parth_unagar // working
+
