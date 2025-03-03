@@ -13,6 +13,7 @@ class SocialLinks extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final appProvider = Provider.of<AppProvider>(context);
+    // print('${AppDimensions.normalize(10)}');
     return Wrap(
       runSpacing: AppDimensions.normalize(10),
       alignment: WrapAlignment.center,
@@ -25,7 +26,7 @@ class SocialLinks extends StatelessWidget {
                   Responsive.isMobile(context) ? Space.all(0.2, 0) : Space.h!,
               child: IconButton(
                 highlightColor: Colors.white54,
-                splashRadius: AppDimensions.normalize(12),
+                // splashRadius: AppDimensions.normalize(12),
                 icon: Image.network(
                   e.value,
                   color: appProvider.isDark ? Colors.white : Colors.black,

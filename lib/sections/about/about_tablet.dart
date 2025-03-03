@@ -107,8 +107,8 @@ class AboutTab extends StatelessWidget {
                     information: "Parth Unagar",
                   ),
                   AboutMeData(
-                    data: "Age",
-                    information: "26",
+                    data: "Nationality",
+                    information: "Indian",
                   ),
                 ],
               ),

@@ -73,7 +73,6 @@ class _NavBarTablet extends StatelessWidget {
     final drawerProvider = Provider.of<DrawerProvider>(context);
     final appProvider = Provider.of<AppProvider>(context);
     return Container(
-      
       color: !appProvider.isDark ? Colors.white : Colors.black,
       padding: Space.v!,
       child: Row(
@@ -81,7 +80,7 @@ class _NavBarTablet extends StatelessWidget {
           Space.x1!,
           IconButton(
             highlightColor: Colors.white54,
-            splashRadius: AppDimensions.normalize(10),
+            // splashRadius: AppDimensions.normalize(10),
             onPressed: () {
               drawerProvider.key.currentState!.openDrawer();
             },

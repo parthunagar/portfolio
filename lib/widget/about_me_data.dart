@@ -4,6 +4,7 @@ import 'package:parth_portfolio/configs/app_typography.dart';
 import 'package:parth_portfolio/provider/app_provider.dart';
 import 'package:provider/provider.dart';
 
+// ignore: must_be_immutable
 class AboutMeData extends StatelessWidget {
   final String data;
   final String information;

@@ -96,6 +96,7 @@ class HomeDesktop extends StatelessWidget {
                     color: !appProvider.isDark ? Colors.black : Colors.white,
                   ),
                 ),
+                Space.y1!,
                 EntranceFader(
                   offset: const Offset(-10, 0),
                   delay: const Duration(seconds: 1),

@@ -1,5 +1,7 @@
 use flutter version : 3.16.9
-not user fvm in this project
+add fvm in project
+upgrade version 3.16.9 To 3.29.0
+fvm use 3.29.0 
 
 Medium profile link : https://medium.com/@parthunagar9
 LinkedIn profile link : https://www.linkedin.com/in/parth-unagar-154a88166/
@@ -41,3 +43,7 @@ firebase deploy --only hosting:parthunagar
 firebase hosting:channel:deploy cardmaker-95ba3--live-parthunagar 
 firebase hosting:channel:deploy parth_unagar // working
 
+
+if you want to change sitename then you need to apply site name in firebase.json file
+current name :
+  - "site": "parthunagar"

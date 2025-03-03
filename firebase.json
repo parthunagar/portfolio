@@ -1,14 +1,14 @@
 {
   "hosting": {
-    "site": "parthunagar",
     "source": ".",
+    "site": "parthunagar",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
     ],
     "frameworksBackend": {
-      "region": "us-central1"
+      "region": "asia-east1"
     }
   }
 }

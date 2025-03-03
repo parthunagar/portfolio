@@ -89,7 +89,8 @@ class StaticUtils {
 
   static const String resume =
       // 'https://drive.google.com/file/d/1bDNNrkQtNVJbXcdwMSx0crQQvAF_nMwV/view?usp=sharing';
-      "https://drive.google.com/file/d/1eChdYPMy9nqWnRpfhPhUd2d5etb34__N/view?usp=drive_link";
+      // "https://drive.google.com/file/d/1eChdYPMy9nqWnRpfhPhUd2d5etb34__N/view?usp=drive_link";
+      'https://drive.google.com/file/d/1EZG5HXt70ERfClVed56t06O36sLnX9IF/view?usp=drive_link';
 
   static const String gitHub = 'https://github.com/parthunagar';
 }

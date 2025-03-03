@@ -4,12 +4,12 @@ import 'package:parth_portfolio/provider/drawer_provider.dart';
 import 'package:parth_portfolio/provider/scroll_provider.dart';
 import 'package:parth_portfolio/sections/main/main_section.dart';
 import 'package:provider/provider.dart';
-import 'package:url_strategy/url_strategy.dart';
+// import 'package:url_strategy/url_strategy.dart';
 import 'package:parth_portfolio/configs/core_theme.dart' as theme;
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
-  setPathUrlStrategy();
+  // setPathUrlStrategy();
   runApp(const MyApp());
 }
 
