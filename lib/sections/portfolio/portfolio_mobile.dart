@@ -10,7 +10,7 @@ import 'package:parth_portfolio/widget/project_card.dart';
 import 'package:provider/provider.dart';
 
 class PortfolioMobileTab extends StatelessWidget {
-  const PortfolioMobileTab({Key? key}) : super(key: key);
+  const PortfolioMobileTab({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -51,7 +51,7 @@ class PortfolioMobileTab extends StatelessWidget {
           width: AppDimensions.normalize(50),
           child: OutlinedButton(
             style: ButtonStyle(
-              side: MaterialStateProperty.all(
+              side: WidgetStateProperty.all(
                 BorderSide(
                   color: appProvider.isDark ? Colors.white : Colors.black,
                   width: 1.0,

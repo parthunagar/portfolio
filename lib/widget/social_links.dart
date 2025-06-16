@@ -7,9 +7,7 @@ import 'package:parth_portfolio/utils/utils.dart';
 import 'package:provider/provider.dart';
 
 class SocialLinks extends StatelessWidget {
-  const SocialLinks({
-    Key? key,
-  }) : super(key: key);
+  const SocialLinks({super.key});
   @override
   Widget build(BuildContext context) {
     final appProvider = Provider.of<AppProvider>(context);

@@ -5,7 +5,7 @@ import 'package:parth_portfolio/provider/app_provider.dart';
 import 'package:provider/provider.dart';
 
 class Footer extends StatelessWidget {
-  const Footer({Key? key}) : super(key: key);
+  const Footer({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +29,8 @@ class Footer extends StatelessWidget {
             ),
             InkWell(
               // onTap: () => openURL("https://github.com/mhmzdev/DevFolio"),
-              onTap: () => openURL("https://docs.flutter.dev/get-started/install"),
+              onTap: () =>
+                  openURL("https://docs.flutter.dev/get-started/install"),
               child: const Text(
                 "Flutter",
                 style: TextStyle(color: Colors.blue),

@@ -5,11 +5,7 @@ import 'package:provider/provider.dart';
 
 class CustomSectionHeading extends StatelessWidget {
   final String text;
-
-  const CustomSectionHeading({
-    Key? key,
-    required this.text,
-  }) : super(key: key);
+  const CustomSectionHeading({super.key, required this.text});
 
   @override
   Widget build(BuildContext context) {
@@ -27,17 +23,16 @@ class CustomSectionHeading extends StatelessWidget {
 class CustomSectionSubHeading extends StatelessWidget {
   final String text;
 
-  const CustomSectionSubHeading({Key? key, required this.text})
-      : super(key: key);
+  const CustomSectionSubHeading({super.key, required this.text});
 
   @override
   Widget build(BuildContext context) {
-     final appProvider = Provider.of<AppProvider>(context);
+    final appProvider = Provider.of<AppProvider>(context);
     return Text(
       text,
       style: AppText.l1!.copyWith(
         fontFamily: 'Montserrat',
-         color: appProvider.isDark ? Colors.white : Colors.black,
+        color: appProvider.isDark ? Colors.white : Colors.black,
       ),
     );
   }

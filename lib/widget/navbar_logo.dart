@@ -4,7 +4,7 @@ import 'package:parth_portfolio/provider/app_provider.dart';
 import 'package:provider/provider.dart';
 
 class NavBarLogo extends StatelessWidget {
-  const NavBarLogo({Key? key}) : super(key: key);
+  const NavBarLogo({super.key});
 
   @override
   Widget build(BuildContext context) {

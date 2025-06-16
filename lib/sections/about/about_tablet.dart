@@ -14,7 +14,7 @@ import 'package:parth_portfolio/widget/community_button.dart';
 import 'package:parth_portfolio/widget/tech_widget.dart';
 
 class AboutTab extends StatelessWidget {
-  const AboutTab({Key? key}) : super(key: key);
+  const AboutTab({super.key});
 
   @override
   Widget build(BuildContext context) {

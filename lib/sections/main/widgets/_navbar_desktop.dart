@@ -1,8 +1,6 @@
 part of '../main_section.dart';
 
 class _NavbarDesktop extends StatelessWidget {
-  const _NavbarDesktop({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     final appProvider = Provider.of<AppProvider>(context);
@@ -66,8 +64,6 @@ class _NavbarDesktop extends StatelessWidget {
 }
 
 class _NavBarTablet extends StatelessWidget {
-  const _NavBarTablet({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     final drawerProvider = Provider.of<DrawerProvider>(context);

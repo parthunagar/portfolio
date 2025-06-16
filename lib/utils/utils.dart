@@ -61,6 +61,7 @@ class StaticUtils {
   static const String rapid = 'assets/services/rapid.png';
   static const String openSource = 'assets/services/open.png';
   static const String openSourceBlack = 'assets/services/open_b.png';
+  static const String cicd = 'assets/services/cicd1.png';
 
   static const List<String> socialIconURL = [
     "https://img.icons8.com/metro/208/ffffff/facebook-new--v2.png",

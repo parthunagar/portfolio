@@ -22,5 +22,5 @@ class WorkUtils {
     "https://dashatar-dev.web.app/#/",
   ];
 
-  static const List<double> communityLogoHeight = [60.0, 70.0, 30.0, 70.0];
+  static const List<double> communityLogoHeight = [60.0, 70.0, 30.0, 100.0];
 }

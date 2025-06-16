@@ -9,7 +9,8 @@ import 'package:parth_portfolio/widget/project_card.dart';
 import 'package:provider/provider.dart';
 
 class PortfolioDesktop extends StatefulWidget {
-  const PortfolioDesktop({Key? key}) : super(key: key);
+  const PortfolioDesktop({super.key});
+
 
   @override
   State<PortfolioDesktop> createState() => _PortfolioDesktopState();
@@ -53,7 +54,7 @@ class _PortfolioDesktopState extends State<PortfolioDesktop> {
             width: AppDimensions.normalize(50),
             child: OutlinedButton(
               style: ButtonStyle(
-                side: MaterialStateProperty.all(
+                side: WidgetStateProperty.all(
                   BorderSide(
                     color: appProvider.isDark ? Colors.white : Colors.black,
                     width: 1.0,

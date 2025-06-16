@@ -7,8 +7,7 @@ import 'package:provider/provider.dart';
 
 class ToolTechWidget extends StatelessWidget {
   final String techName;
-
-  const ToolTechWidget({Key? key, required this.techName}) : super(key: key);
+  const ToolTechWidget({super.key, required this.techName});
   @override
   Widget build(BuildContext context) {
     final appProvider = Provider.of<AppProvider>(context);

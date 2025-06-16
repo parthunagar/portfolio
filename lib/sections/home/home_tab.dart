@@ -9,7 +9,7 @@ import 'package:parth_portfolio/widget/social_links.dart';
 import 'package:provider/provider.dart';
 
 class HomeTab extends StatelessWidget {
-  const HomeTab({Key? key}) : super(key: key);
+  const HomeTab({super.key});
 
   @override
   Widget build(BuildContext context) {

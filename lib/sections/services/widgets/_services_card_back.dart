@@ -1,9 +1,10 @@
 part of '../services.dart';
 
 class _ServiceCardBackWidget extends StatelessWidget {
-  const _ServiceCardBackWidget(
-      {Key? key, required this.serviceDesc, required this.serviceTitle})
-      : super(key: key);
+  const _ServiceCardBackWidget({
+    required this.serviceDesc,
+    required this.serviceTitle,
+  });
 
   final String serviceDesc;
   final String serviceTitle;
@@ -32,15 +33,17 @@ class _ServiceCardBackWidget extends StatelessWidget {
             onPressed: () => showDialog(
                 context: context,
                 builder: (contecxt) => AlertDialog(
-                  backgroundColor: appProvider.isDark ? Colors.white :Colors.grey[900],
-                  surfaceTintColor: appProvider.isDark ? Colors.white :Colors.grey[900],
+                      backgroundColor:
+                          appProvider.isDark ? Colors.white : Colors.grey[900],
+                      surfaceTintColor:
+                          appProvider.isDark ? Colors.white : Colors.grey[900],
                       title: Text(
                         "Hire Me!",
                         style: AppText.b2b!.copyWith(
-                            color: appProvider.isDark
-                                ? Colors.grey[900]
-                                : Colors.white,
-                            ),
+                          color: appProvider.isDark
+                              ? Colors.grey[900]
+                              : Colors.white,
+                        ),
                       ),
                       actions: [
                         TextButton(

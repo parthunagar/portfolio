@@ -9,7 +9,7 @@ import 'package:parth_portfolio/widget/social_links.dart';
 import 'package:provider/provider.dart';
 
 class HomeDesktop extends StatelessWidget {
-  const HomeDesktop({Key? key}) : super(key: key);
+  const HomeDesktop({super.key});
 
   @override
   Widget build(BuildContext context) {

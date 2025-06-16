@@ -13,13 +13,13 @@ class AboutMeData extends StatelessWidget {
   // GestureRecognizer? recognizer;
   void Function()? onTap;
   AboutMeData({
-    Key? key,
+    super.key,
     required this.data,
     required this.information,
     this.alignment,
     // required this.recognizer,
     this.onTap,
-  }) : super(key: key);
+  });
   @override
   Widget build(BuildContext context) {
     final appProvider = Provider.of<AppProvider>(context);
@@ -36,7 +36,7 @@ class AboutMeData extends StatelessWidget {
               ),
             ),
             TextSpan(
-              recognizer: TapGestureRecognizer()..onTap = onTap ?? (){},
+              recognizer: TapGestureRecognizer()..onTap = onTap ?? () {},
               text: " $information\n",
               style: AppText.l1!.copyWith(
                 color: appProvider.isDark ? Colors.white : Colors.black,

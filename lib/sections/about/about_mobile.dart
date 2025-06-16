@@ -16,7 +16,7 @@ import 'package:parth_portfolio/widget/community_button.dart';
 import 'package:parth_portfolio/widget/tech_widget.dart';
 
 class AboutMobile extends StatelessWidget {
-  const AboutMobile({Key? key}) : super(key: key);
+  const AboutMobile({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -142,6 +142,7 @@ class AboutMobile extends StatelessWidget {
           Wrap(
               alignment: WrapAlignment.center,
               crossAxisAlignment: WrapCrossAlignment.center,
+              runSpacing: 10,
               children: WorkUtils.logos
                   .asMap()
                   .entries

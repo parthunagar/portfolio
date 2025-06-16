@@ -73,10 +73,7 @@ wait() {
 class WidgetAnimator extends StatelessWidget {
   final Widget child;
 
-  const WidgetAnimator({
-    Key? key,
-    required this.child,
-  }) : super(key: key);
+  const WidgetAnimator({super.key, required this.child});
 
   @override
   Widget build(BuildContext context) {

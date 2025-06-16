@@ -6,11 +6,10 @@ class _ServiceCard extends StatefulWidget {
   final String serviceDescription;
 
   const _ServiceCard({
-    Key? key,
     required this.serviceIcon,
     required this.serviceTitle,
     required this.serviceDescription,
-  }) : super(key: key);
+  });
 
   @override
   _ServiceCardState createState() => _ServiceCardState();
@@ -23,7 +22,8 @@ class _ServiceCardState extends State<_ServiceCard> {
   @override
   Widget build(BuildContext context) {
     final appProvider = Provider.of<AppProvider>(context);
-
+    matchImg(String icon) => widget.serviceIcon.contains(icon);
+    bool showDark = !appProvider.isDark;
     return InkWell(
       hoverColor: Colors.transparent,
       splashColor: Colors.transparent,
@@ -102,10 +102,13 @@ class _ServiceCardState extends State<_ServiceCard> {
               Image.asset(
                 widget.serviceIcon,
                 height: AppDimensions.normalize(30),
-                color: widget.serviceIcon.contains(StaticUtils.openSource) &&
-                        !appProvider.isDark
+                color: matchImg(StaticUtils.openSource) && showDark
                     ? Colors.black
-                    : null,
+                    : matchImg(StaticUtils.cicd) && showDark
+                        ? Colors.black
+                        : matchImg(StaticUtils.cicd) && !showDark
+                            ? Colors.white
+                            : null,
               ),
               Space.y1!,
               Text(

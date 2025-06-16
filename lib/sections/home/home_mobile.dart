@@ -8,7 +8,7 @@ import 'package:parth_portfolio/widget/social_links.dart';
 import 'package:provider/provider.dart';
 
 class HomeMobile extends StatelessWidget {
-  const HomeMobile({Key? key}) : super(key: key);
+  const HomeMobile({super.key});
 
   @override
   Widget build(BuildContext context) {

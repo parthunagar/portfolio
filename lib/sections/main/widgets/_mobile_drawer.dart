@@ -1,8 +1,6 @@
 part of '../main_section.dart';
 
 class _MobileDrawer extends StatelessWidget {
-  const _MobileDrawer({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     final appProvider = Provider.of<AppProvider>(context);
@@ -16,7 +14,9 @@ class _MobileDrawer extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const SizedBox(height: 30,),
+              const SizedBox(
+                height: 30,
+              ),
               const Center(
                 child: NavBarLogo(),
               ),

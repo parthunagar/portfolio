@@ -15,7 +15,7 @@ import 'package:provider/provider.dart';
 import 'package:universal_html/html.dart' as html;
 
 class AboutDesktop extends StatelessWidget {
-  const AboutDesktop({Key? key}) : super(key: key);
+  const AboutDesktop({super.key});
 
   @override
   Widget build(BuildContext context) {
