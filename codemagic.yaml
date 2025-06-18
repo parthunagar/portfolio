@@ -49,7 +49,8 @@ workflows:
         script: flutter build web
       - name: Deploy to Firebase Hosting Preview
         script: |
-          firebase hosting:channel:deploy parth_unagar
+          # firebase hosting:channel:deploy parth_unagar
+          firebase hosting:channel:deploy "$FIREBASE_CHANNEL" --project cardmaker-95ba3 --token "$FIREBASE_TOKEN" --public build/web
           # firebase deploy --only hosting --project cardmaker-95ba3 \
           #   --token "$FIREBASE_TOKEN" \
           #   --channel "$FIREBASE_CHANNEL" \
