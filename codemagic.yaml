@@ -18,13 +18,40 @@ workflows:
           # flutter pub run build_runner build --delete-conflicting-outputs
           flutter --version
           flutter build apk --release 
-          flutter build ios --release
+          # flutter build ios --release
     artifacts:
       - build/app/outputs/flutter-apk/app-release.apk
-      - build/ios/iphoneos/Runner.app
-      - build/ios/archive/*.xcarchive
-      - build/ios/ipa/*.ipa
+      # - build/ios/iphoneos/Runner.app
+      # - build/ios/archive/*.xcarchive
+      # - build/ios/ipa/*.ipa
     publishing:
       email:
         recipients:
           - parthunagar9@gmail.com
+    
+  flutter-web-deploy:
+    name: Web Build & Firebase Hosting Deploy
+    environment:
+      flutter: 3.29.0  # Or use `stable`
+      # vars:
+        # FIREBASE_TOKEN: $FIREBASE_TOKEN  # Add this in Codemagic UI
+    scripts:
+      # - name: Install Firebase CLI
+        # script: |
+          # curl -sL https://firebase.tools | bash
+      - name: Build Flutter Web
+        script: |
+          flutter clean
+          flutter pub get
+          flutter build web --release
+      - name: Deploy to Firebase Hosting
+        script: |
+          # firebase hosting:channel:deploy parth_unagar --token $FIREBASE_TOKEN
+          firebase hosting:channel:deploy parth_unagar 
+    artifacts:
+      - build/web/**/*
+    publishing:
+      email:
+        recipients:
+          - parthunagar9@gmail.com
+
