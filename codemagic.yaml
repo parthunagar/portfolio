@@ -34,7 +34,7 @@ workflows:
     environment:
       flutter: stable
       vars:
-        FIREBASE_CHANNEL: parth_unagar
+        FIREBASE_CHANNEL: cardmaker-95ba3
       # secure_files:
       #   - firebase-service-account.json
     scripts:
