@@ -49,7 +49,7 @@ workflows:
         script: flutter build web
       - name: Deploy to Firebase Hosting Preview
         script: |
-          firebase deploy --only hosting --project your-project-id \
+          firebase deploy --only hosting --project cardmaker-95ba3 \
             --token "$FIREBASE_TOKEN" \
             --channel "$FIREBASE_CHANNEL" \
             --public build/web

@@ -47,3 +47,16 @@ firebase hosting:channel:deploy parth_unagar // working
 if you want to change sitename then you need to apply site name in firebase.json file
 current name :
   - "site": "parthunagar"
+
+
+# when deploy web using firebase hosting in Codemagic
+we need this file : application_default_credentials.json
+added in codemagic.yaml : 
+    echo $firebase_service_account | base64 --decode > ~/.config/gcloud/application_default_credentials.json
+# 📦 How to get the file:
+Go to Google Cloud Console
+Navigate to:
+IAM & Admin > Service Accounts
+Create or select a service account
+Click “Keys” → “Add Key” → “Create new key” (JSON)
+Save the JSON file
