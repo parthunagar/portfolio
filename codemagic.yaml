@@ -12,7 +12,7 @@ workflows:
     scripts:
       - name: Set version
         script: |
-          flutter cllean
+          flutter clean
           flutter pub get
           # flutter pub run flutter_launcher_icons:main
           # flutter pub run build_runner build --delete-conflicting-outputs
@@ -34,11 +34,14 @@ workflows:
     environment:
       flutter: 3.29.0  # Or use `stable`
       # vars:
-        # FIREBASE_TOKEN: $FIREBASE_TOKEN  # Add this in Codemagic UI
+      #   FIREBASE_TOKEN: $FIREBASE_TOKEN  # Add this in Codemagic UI
     scripts:
-      # - name: Install Firebase CLI
-        # script: |
-          # curl -sL https://firebase.tools | bash
+      - name: Deploy to Firebase
+        script: |
+          firebase deploy --token $FIREBASE_TOKEN
+      - name: Install Firebase CLI
+        script: |
+          curl -sL https://firebase.tools | bash
       - name: Build Flutter Web
         script: |
           flutter clean
