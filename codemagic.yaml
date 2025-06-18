@@ -28,33 +28,30 @@ workflows:
       email:
         recipients:
           - parthunagar9@gmail.com
-    
-  flutter-web-deploy:
-    name: Web Build & Firebase Hosting Deploy
+
+  web-deploy-preview:
+    name: Web Build & Firebase Preview Deploy
     environment:
-      flutter: 3.29.0  # Or use `stable`
-      # vars:
-      #   FIREBASE_TOKEN: $FIREBASE_TOKEN  # Add this in Codemagic UI
+      flutter: stable
+      vars:
+        FIREBASE_CHANNEL: parth_unagar
+      # secure_files:
+      #   - firebase-service-account.json
     scripts:
-      - name: Deploy to Firebase
-        script: |
-          firebase deploy --token $FIREBASE_TOKEN
       - name: Install Firebase CLI
         script: |
           curl -sL https://firebase.tools | bash
+      - name: Set up Firebase authentication
+        script: |
+          mkdir -p ~/.config/gcloud
+          echo $firebase_service_account | base64 --decode > ~/.config/gcloud/application_default_credentials.json
       - name: Build Flutter Web
+        script: flutter build web
+      - name: Deploy to Firebase Hosting Preview
         script: |
-          flutter clean
-          flutter pub get
-          flutter build web --release
-      - name: Deploy to Firebase Hosting
-        script: |
-          # firebase hosting:channel:deploy parth_unagar --token $FIREBASE_TOKEN
-          firebase hosting:channel:deploy parth_unagar 
+          firebase deploy --only hosting --project your-project-id \
+            --token "$FIREBASE_TOKEN" \
+            --channel "$FIREBASE_CHANNEL" \
+            --public build/web
     artifacts:
-      - build/web/**/*
-    publishing:
-      email:
-        recipients:
-          - parthunagar9@gmail.com
-
+      - build/web/**
