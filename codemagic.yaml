@@ -33,6 +33,8 @@ workflows:
     name: Web Build & Firebase Preview Deploy
     environment:
       flutter: stable
+      groups:
+        - variable_group
       vars:
         FIREBASE_CHANNEL: cardmaker-95ba3
       # secure_files:
