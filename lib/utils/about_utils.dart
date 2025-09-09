@@ -14,7 +14,7 @@ class AboutUtils {
       //     ' Been a former Associate Developer and also Senior Developer Surat, India. Currently working as Team Lead Software Engineer at Ahmedabad, India';
       // ignore: prefer_interpolation_to_compose_strings
       'I\'m a fresh postgraduate with a Master\'s in Computer Applications from SRIMCA at Uka Tarsadia University, Bardoli, Gujarat.'
-      ' I have been developing mobile apps for over ${SuperDate(DateTime.now().add(Duration(days: 500))).findTotalExperience()} years.'
+      ' I have been developing mobile apps for over ${SuperDate(DateTime.now()).findTotalExperience()} years.'
       ' Throughout my career, I have worked in teams for various startups, helping them launch their prototypes,'
       ' gaining valuable learning experiences. I have previously worked as an Associate Developer and later as a '
       'Senior Developer in Surat, India. Currently, I am working as a Team Lead Software Engineer in Ahmedabad, India.';

@@ -43,6 +43,9 @@ firebase deploy --only hosting:parthunagar
 firebase hosting:channel:deploy cardmaker-95ba3--live-parthunagar 
 firebase hosting:channel:deploy parth_unagar // working
 
+# if website already live and only update[change some code/functionality & apply into live website] 
+Your live URL (https://<project-id>.web.app) is only updated if you run:
+firebase deploy --only hosting
 
 if you want to change sitename then you need to apply site name in firebase.json file
 current name :
